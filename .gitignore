@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/Project1/bin
+/Project1/obj
+/ProjectTests/obj/Debug/netcoreapp1.0
+/ProjectTests/bin/Debug/netcoreapp1.0
