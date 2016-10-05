@@ -1,0 +1,15 @@
+﻿@*
+    Toms
+*@
+@model List<DataModel.Tom>
+@{
+}
+
+Toms
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li><a asp-controller="Tom" asp-action="Detail" asp-route-id="@item.Name">@item.Name</a></li>
+    }
+</ul>
