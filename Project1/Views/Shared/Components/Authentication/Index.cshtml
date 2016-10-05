@@ -1,9 +1,12 @@
 ﻿@*
-    Show username if authenticated
+    Show username if authenticated or a login box if not.
 *@
 @model string
 @{
+    // code goes here
 }
 
 <p>Authentication box</p>
 <p>User: @Model</p>
+
+@inject StuffConfig Credentials

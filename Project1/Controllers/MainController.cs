@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
-using Project1.Config;
+using WebApp.Config;
 
 namespace Project1.Controllers
 {
