@@ -15,6 +15,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6CF6ECC7-F149-4485-84C8-89BCC34644EC}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Project1.Tests", "ProjectTests\Project1.Tests.xproj", "{E7E93D06-646E-4980-A121-E91CB5B26EED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21B4941F-5E9C-43DB-9F28-003CC65118C6} = {21B4941F-5E9C-43DB-9F28-003CC65118C6}
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SmearerMiddleware", "SmearerMiddleware\SmearerMiddleware.xproj", "{30494627-18AA-4973-AE64-DF0D644D4808}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DataModel", "DataModel\DataModel.xproj", "{21B4941F-5E9C-43DB-9F28-003CC65118C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +37,14 @@ Global
 		{E7E93D06-646E-4980-A121-E91CB5B26EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7E93D06-646E-4980-A121-E91CB5B26EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7E93D06-646E-4980-A121-E91CB5B26EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30494627-18AA-4973-AE64-DF0D644D4808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30494627-18AA-4973-AE64-DF0D644D4808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30494627-18AA-4973-AE64-DF0D644D4808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30494627-18AA-4973-AE64-DF0D644D4808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21B4941F-5E9C-43DB-9F28-003CC65118C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B4941F-5E9C-43DB-9F28-003CC65118C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B4941F-5E9C-43DB-9F28-003CC65118C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B4941F-5E9C-43DB-9F28-003CC65118C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +52,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{AC6B8FDB-5CAE-447F-BA69-00733019DAED} = {BC3024BC-0D4B-41FC-8A0A-2AA5B4B15537}
 		{E7E93D06-646E-4980-A121-E91CB5B26EED} = {6CF6ECC7-F149-4485-84C8-89BCC34644EC}
+		{30494627-18AA-4973-AE64-DF0D644D4808} = {BC3024BC-0D4B-41FC-8A0A-2AA5B4B15537}
+		{21B4941F-5E9C-43DB-9F28-003CC65118C6} = {BC3024BC-0D4B-41FC-8A0A-2AA5B4B15537}
 	EndGlobalSection
 EndGlobal

@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Project1.Config;
+using SmearerMiddleware;
 
 namespace Project1
 {
@@ -53,6 +54,11 @@ namespace Project1
             {
                 app.UseExceptionHandler("/error.html");
             }
+
+            app.UseSmearer(new SmearerOptions()
+            {
+                Key = "Blah"
+            });
 
             app.UseMvcWithDefaultRoute();
             app.UseDefaultFiles();

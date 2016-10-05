@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project1.Middleware
+namespace SmearerMiddleware
 {
     /// <summary>
     /// Garbles any text by encoding it in base 64.

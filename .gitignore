@@ -7,3 +7,9 @@
 /Project1/obj
 /ProjectTests/obj/Debug/netcoreapp1.0
 /ProjectTests/bin/Debug/netcoreapp1.0
+/DataModel/bin/Debug
+/DataModel/obj/Debug
+/Project1/node_modules
+/Project1/wwwroot/lib
+/SmearerMiddleware/bin/Debug
+/SmearerMiddleware/obj/Debug
