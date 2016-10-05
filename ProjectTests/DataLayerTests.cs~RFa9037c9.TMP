@@ -1,7 +1,6 @@
 ﻿using DataModel;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
@@ -30,16 +29,8 @@ namespace ProjectTests
             {
                 Name = "PDX-100"
             });
-            // fails because there is already the same tom in the database.
             context.SaveChanges();
         }
 
-        [Fact]
-        public void CanRead()
-        {
-            int recordCount = context.Cymbal.Count();
-            Debug.WriteLine($"Records: {recordCount}");
-            Assert.True(recordCount > 0);
-        }
     }
 }

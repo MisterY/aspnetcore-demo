@@ -8,10 +8,10 @@ namespace DataModel
 {
     public class MyContext : DbContext
     {
-        public DbSet<Drumset> Sets { get; set; }
-        public DbSet<Cymbal> Cymbals { get; set; }
-        public DbSet<Tom> Toms { get; set; }
-        public DbSet<HiHat> HiHats { get; set; }
+        public DbSet<Drumset> Set { get; set; }
+        public DbSet<Cymbal> Cymbal { get; set; }
+        public DbSet<Tom> Tom { get; set; }
+        public DbSet<HiHat> HiHat { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
