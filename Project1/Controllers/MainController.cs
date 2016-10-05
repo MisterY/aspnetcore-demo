@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using WebApp.Config;
 
-namespace Project1.Controllers
+namespace WebApp.Controllers
 {
     public class MainController : Controller
     {

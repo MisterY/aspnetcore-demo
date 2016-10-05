@@ -55,10 +55,10 @@ namespace Project1
                 app.UseExceptionHandler("/error.html");
             }
 
-            app.UseSmearer(new SmearerOptions()
-            {
-                Key = "Blah"
-            });
+            //app.UseSmearer(new SmearerOptions()
+            //{
+            //    Key = "Blah"
+            //});
 
             app.UseMvcWithDefaultRoute();
             app.UseDefaultFiles();

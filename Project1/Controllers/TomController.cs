@@ -18,11 +18,37 @@ namespace WebApp.Controllers
             return View(model);
         }
 
+        public IActionResult Create()
+        {
+            var model = new Tom();
+            return View(model);
+        }
+
         public IActionResult Detail(string id)
         {
             var model = new MyContext().Tom.FirstOrDefault(x => x.Name == id);
 
             return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Update(Tom model)
+        {
+            var context = new MyContext();
+
+            var existing = context.Tom.FirstOrDefault(x => x.Name == model.Name);
+
+            if (existing == null)
+            {
+                context.Tom.Add(model);
+            } else
+            {
+                existing = model;
+            }
+
+            context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
