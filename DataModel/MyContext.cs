@@ -15,7 +15,7 @@ namespace DataModel
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Filename=./database.sqlite");
+            optionsBuilder.UseSqlite("Filename=../../database.sqlite");
 
             base.OnConfiguring(optionsBuilder);
         }
