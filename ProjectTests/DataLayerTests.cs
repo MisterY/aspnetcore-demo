@@ -21,5 +21,16 @@ namespace ProjectTests
         {
             Assert.True(context != null);
         }
+
+        [Fact]
+        public void CanInsertDrumset()
+        {
+            context.Toms.Add(new Tom
+            {
+                Name = "PDX-100"
+            });
+            context.SaveChanges();
+        }
+
     }
 }

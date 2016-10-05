@@ -15,7 +15,7 @@ namespace DataModel
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.use
+            optionsBuilder.UseSqlite("Filename=./database.sqlite");
 
             base.OnConfiguring(optionsBuilder);
         }
@@ -24,8 +24,14 @@ namespace DataModel
         {
             base.OnModelCreating(modelBuilder);
 
+            modelBuilder.Entity<Cymbal>().HasKey(x => x.Name);
+
             modelBuilder.Entity<Drumset>().HasKey(x => x.Name);
             modelBuilder.Entity<Drumset>().HasOne<HiHat>();
+
+            modelBuilder.Entity<HiHat>().HasKey(x => x.Name);
+
+            modelBuilder.Entity<Tom>().HasKey(x => x.Name);
         }
     }
 }
