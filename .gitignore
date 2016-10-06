@@ -18,3 +18,4 @@
 /packages
 /MvcApp.Tests/bin/Debug
 /MvcApp.Tests/obj/Debug
+/MvcApp/bower_components/angular
