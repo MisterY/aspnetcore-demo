@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@model List<MvcApp.Data.Drumset>
+<h2>Angular Demo with Data</h2>
+
+<p>Sets</p>
+<ul>
+    @foreach (var item in Model)
+    {
+    <li>@item.Name</li>
+    }
+</ul>

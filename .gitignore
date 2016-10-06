@@ -16,3 +16,5 @@
 /MvcApp/bin
 /MvcApp/obj/Debug
 /packages
+/MvcApp.Tests/bin/Debug
+/MvcApp.Tests/obj/Debug
