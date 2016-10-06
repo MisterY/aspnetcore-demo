@@ -1,4 +1,5 @@
 ﻿using MvcApp.Data;
+using MvcApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +15,13 @@ namespace MvcApp.Controllers
         {
             // fetch some data
             var context = new DrumsContext();
-            var data = context.Drumsets
+            var data = context.Drumset
                 .OrderBy(x => x.Manufacturer).ToList();
-
-            return View(data);
+            var model = new DrumsetsViewModel
+            {
+                Drumsets = data
+            };
+            return View(model);
         }
     }
 }

@@ -26,7 +26,7 @@ namespace MvcApp.Tests
         [Fact]
         public void CanGetData()
         {
-            var allSets = context.Drumsets.ToList();
+            var allSets = context.Drumset.ToList();
 
             Assert.True(allSets.Count() > 0);
         }
