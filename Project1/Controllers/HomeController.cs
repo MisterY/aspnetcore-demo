@@ -12,5 +12,7 @@ namespace WebApp.Controllers
     {
         // GET: /<controller>/
         public IActionResult Index() => View();
+
+        public IActionResult Angular() => View();
     }
 }

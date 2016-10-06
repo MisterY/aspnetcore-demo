@@ -13,3 +13,6 @@
 /Project1/wwwroot/lib
 /SmearerMiddleware/bin/Debug
 /SmearerMiddleware/obj/Debug
+/MvcApp/bin
+/MvcApp/obj/Debug
+/packages

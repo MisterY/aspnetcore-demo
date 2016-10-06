@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{A0451284-7
 		data\database.sqlite = data\database.sqlite
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApp", "MvcApp\MvcApp.csproj", "{DB2EAB25-5A64-4CC1-A010-56866036FFE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{21B4941F-5E9C-43DB-9F28-003CC65118C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21B4941F-5E9C-43DB-9F28-003CC65118C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21B4941F-5E9C-43DB-9F28-003CC65118C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB2EAB25-5A64-4CC1-A010-56866036FFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB2EAB25-5A64-4CC1-A010-56866036FFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB2EAB25-5A64-4CC1-A010-56866036FFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB2EAB25-5A64-4CC1-A010-56866036FFE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +66,6 @@ Global
 		{E7E93D06-646E-4980-A121-E91CB5B26EED} = {6CF6ECC7-F149-4485-84C8-89BCC34644EC}
 		{30494627-18AA-4973-AE64-DF0D644D4808} = {BC3024BC-0D4B-41FC-8A0A-2AA5B4B15537}
 		{21B4941F-5E9C-43DB-9F28-003CC65118C6} = {BC3024BC-0D4B-41FC-8A0A-2AA5B4B15537}
+		{DB2EAB25-5A64-4CC1-A010-56866036FFE6} = {BC3024BC-0D4B-41FC-8A0A-2AA5B4B15537}
 	EndGlobalSection
 EndGlobal
