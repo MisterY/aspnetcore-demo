@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Microsoft.IdentityModel.Clients.ActiveDirectory;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -32,6 +34,22 @@ namespace DrumsClient
             InitializeComponent();
         }
 
-        
+        private AuthenticationContext authContext;
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            authContext = new AuthenticationContext(string.Concat(authority, directory));
+            //var userAssertion = new UserAssertion(clientId);
+            var result = authContext.AcquireTokenAsync(resource, clientId, new Uri(redirectUri), null);
+            //var x = await result;
+            var httpClient = new HttpClient();
+            //httpClient.DefaultRequestHeaders.Authorization = 
+            //    new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", result.)
+        }
     }
 }
