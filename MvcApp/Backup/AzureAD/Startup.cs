@@ -1,18 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof (MvcApp.Startup))]
+[assembly: OwinStartup(typeof(MvcApp.Startup))]
+
 namespace MvcApp
 {
     public partial class Startup
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
-        //ConfigureAuth(app);
+            //ConfigureAuth(app);
         }
     }
 }

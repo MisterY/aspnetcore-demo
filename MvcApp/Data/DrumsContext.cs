@@ -16,6 +16,8 @@ namespace MvcApp.Data
 
         public virtual DbSet<Drumset> Drumset { get; set; }
 
+        public virtual DbSet<Cymbal> Cymbal { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
